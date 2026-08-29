@@ -4,13 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Portafolio Profesional</title>
+    <!-- Configuración PWA -->
     <link rel="manifest" href="manifest.json">
     <meta name="theme-color" content="#2563eb">
     <link rel="apple-touch-icon" href="images/icon-192.png">
+    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-slate-900 text-slate-100 font-sans antialiased">
 
+    <!-- HEADER / NAVEGACIÓN -->
     <header class="sticky top-0 z-50 bg-slate-900/85 backdrop-blur-md border-b border-slate-800">
         <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
             <span class="font-bold text-xl text-blue-400">Portafolio</span>
@@ -25,6 +28,7 @@
         </div>
     </header>
 
+    <!-- HERO SECTION -->
     <section class="max-w-6xl mx-auto px-6 py-24 md:py-32 flex flex-col items-start justify-center">
         <span class="text-blue-400 font-medium mb-3">Hola, mi nombre es</span>
         <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-4">Adrian <span class="text-slate-400">Desarrollador Web.</span></h1>
@@ -35,6 +39,7 @@
         </div>
     </section>
 
+    <!-- SOBRE MÍ -->
     <section id="sobre-mi" class="border-t border-slate-800 bg-slate-950/50 py-20">
         <div class="max-w-6xl mx-auto px-6">
             <h2 class="text-2xl md:text-3xl font-bold mb-6">Sobre Mí</h2>
@@ -42,38 +47,51 @@
         </div>
     </section>
 
+    <!-- HABILIDADES -->
     <section id="habilidades" class="border-t border-slate-800 py-20">
         <div class="max-w-6xl mx-auto px-6">
             <h2 class="text-2xl md:text-3xl font-bold mb-10">Habilidades Técnicas</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 
+                <!-- Columna 1: Programación & Desarrollo -->
                 <div class="bg-slate-900 border border-slate-800 p-6 rounded-2xl">
-                    <h3 class="text-lg font-bold mb-4 text-blue-400">Frontend & Diseño</h3>
+                    <h3 class="text-lg font-bold mb-4 text-blue-400">Desarrollo & Programación</h3>
                     <ul class="space-y-2 text-slate-400">
-                        <li class="flex items-center gap-2">✓ HTML5 / CSS3 Avanzado</li>
-                        <li class="flex items-center gap-2">✓ JavaScript (ES6+)</li>
-                        <li class="flex items-center gap-2">✓ Tailwind CSS & Responsive Design</li>
-                        <li class="flex items-center gap-2">✓ Progressive Web Apps (PWA)</li>
+                        <li class="flex items-center justify-between"><span>✓ Python</span><div class="w-24 bg-slate-800 h-2 rounded-full overflow-hidden"><div class="bg-blue-500 h-full w-[90%]"></div></div></li>
+                        <li class="flex items-center justify-between"><span>✓ HTML</span><div class="w-24 bg-slate-800 h-2 rounded-full overflow-hidden"><div class="bg-blue-500 h-full w-[95%]"></div></div></li>
+                        <li class="flex items-center justify-between"><span>✓ CSS</span><div class="w-24 bg-slate-800 h-2 rounded-full overflow-hidden"><div class="bg-blue-500 h-full w-[90%]"></div></div></li>
+                        <li class="flex items-center justify-between"><span>✓ PHP</span><div class="w-24 bg-slate-800 h-2 rounded-full overflow-hidden"><div class="bg-blue-500 h-full w-[85%]"></div></div></li>
+                        <li class="flex items-center justify-between"><span>✓ C++</span><div class="w-24 bg-slate-800 h-2 rounded-full overflow-hidden"><div class="bg-blue-500 h-full w-[80%]"></div></div></li>
+                        <li class="flex items-center justify-between"><span>✓ Sql</span><div class="w-24 bg-slate-800 h-2 rounded-full overflow-hidden"><div class="bg-blue-500 h-full w-[85%]"></div></div></li>
+                        <li class="flex items-center justify-between"><span>✓ Visual basic</span><div class="w-24 bg-slate-800 h-2 rounded-full overflow-hidden"><div class="bg-blue-500 h-full w-[70%]"></div></div></li>
+                        <li class="flex items-center justify-between"><span>✓ Android Studio</span><div class="w-24 bg-slate-800 h-2 rounded-full overflow-hidden"><div class="bg-blue-500 h-full w-[80%]"></div></div></li>
                     </ul>
                 </div>
 
+                <!-- Columna 2: Diseño, Multimedia & Motor de Juegos -->
                 <div class="bg-slate-900 border border-slate-800 p-6 rounded-2xl">
-                    <h3 class="text-lg font-bold mb-4 text-blue-400">Desarrollo & Sistemas</h3>
+                    <h3 class="text-lg font-bold mb-4 text-blue-400">Diseño & Multimedia</h3>
                     <ul class="space-y-2 text-slate-400">
-                        <li class="flex items-center gap-2">✓ Service Workers & Caché</li>
-                        <li class="flex items-center gap-2">✓ Bases de Datos & CRUD</li>
-                        <li class="flex items-center gap-2">✓ Control de Inventarios y Pedidos</li>
-                        <li class="flex items-center gap-2">✓ Arquitectura de Apps Web</li>
+                        <li class="flex items-center justify-between"><span>✓ Canva</span><div class="w-24 bg-slate-800 h-2 rounded-full overflow-hidden"><div class="bg-blue-500 h-full w-[90%]"></div></div></li>
+                        <li class="flex items-center justify-between"><span>✓ Blender</span><div class="w-24 bg-slate-800 h-2 rounded-full overflow-hidden"><div class="bg-blue-500 h-full w-[85%]"></div></div></li>
+                        <li class="flex items-center justify-between"><span>✓ Photoshop</span><div class="w-24 bg-slate-800 h-2 rounded-full overflow-hidden"><div class="bg-blue-500 h-full w-[85%]"></div></div></li>
+                        <li class="flex items-center justify-between"><span>✓ Photography</span><div class="w-24 bg-slate-800 h-2 rounded-full overflow-hidden"><div class="bg-blue-500 h-full w-[85%]"></div></div></li>
+                        <li class="flex items-center justify-between"><span>✓ Game Maker</span><div class="w-24 bg-slate-800 h-2 rounded-full overflow-hidden"><div class="bg-blue-500 h-full w-[80%]"></div></div></li>
+                        <li class="flex items-center justify-between"><span>✓ Unity</span><div class="w-24 bg-slate-800 h-2 rounded-full overflow-hidden"><div class="bg-blue-500 h-full w-[80%]"></div></div></li>
+                        <li class="flex items-center justify-between"><span>✓ Meta Spark</span><div class="w-24 bg-slate-800 h-2 rounded-full overflow-hidden"><div class="bg-blue-500 h-full w-[80%]"></div></div></li>
                     </ul>
                 </div>
 
+                <!-- Columna 3: Herramientas, Ofimática & Sistemas -->
                 <div class="bg-slate-900 border border-slate-800 p-6 rounded-2xl">
-                    <h3 class="text-lg font-bold mb-4 text-blue-400">Herramientas & Workflow</h3>
+                    <h3 class="text-lg font-bold mb-4 text-blue-400">Ofimática & Sistemas</h3>
                     <ul class="space-y-2 text-slate-400">
-                        <li class="flex items-center gap-2">✓ Git & GitHub</li>
-                        <li class="flex items-center gap-2">✓ Visual Studio Code</li>
-                        <li class="flex items-center gap-2">✓ DevTools & Debugging</li>
-                        <li class="flex items-center gap-2">✓ Despliegue Web (Deployment)</li>
+                        <li class="flex items-center justify-between"><span>✓ Word</span><div class="w-24 bg-slate-800 h-2 rounded-full overflow-hidden"><div class="bg-blue-500 h-full w-[90%]"></div></div></li>
+                        <li class="flex items-center justify-between"><span>✓ Excel</span><div class="w-24 bg-slate-800 h-2 rounded-full overflow-hidden"><div class="bg-blue-500 h-full w-[90%]"></div></div></li>
+                        <li class="flex items-center justify-between"><span>✓ Access</span><div class="w-24 bg-slate-800 h-2 rounded-full overflow-hidden"><div class="bg-blue-500 h-full w-[80%]"></div></div></li>
+                        <li class="flex items-center justify-between"><span>✓ Arduino</span><div class="w-24 bg-slate-800 h-2 rounded-full overflow-hidden"><div class="bg-blue-500 h-full w-[65%]"></div></div></li>
+                        <li class="flex items-center justify-between"><span>✓ Computer Maintenance</span><div class="w-24 bg-slate-800 h-2 rounded-full overflow-hidden"><div class="bg-blue-500 h-full w-[85%]"></div></div></li>
+                        <li class="flex items-center justify-between"><span>✓ Cisco Packet Tracer</span><div class="w-24 bg-slate-800 h-2 rounded-full overflow-hidden"><div class="bg-blue-500 h-full w-[80%]"></div></div></li>
                     </ul>
                 </div>
 
@@ -81,11 +99,13 @@
         </div>
     </section>
 
+    <!-- PROYECTOS -->
     <section id="proyectos" class="border-t border-slate-800 bg-slate-950/50 py-20">
         <div class="max-w-6xl mx-auto px-6">
             <h2 class="text-2xl md:text-3xl font-bold mb-10">Proyectos Destacados</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 
+                <!-- Proyecto 1: Sistema de Pedidos -->
                 <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 flex flex-col justify-between">
                     <div>
                         <h3 class="text-xl font-bold mb-2 text-blue-400">Sistema de Pedidos</h3>
@@ -101,6 +121,7 @@
                     </div>
                 </div>
 
+                <!-- Proyecto 2: Sitio Web Zayra -->
                 <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 flex flex-col justify-between">
                     <div>
                         <h3 class="text-xl font-bold mb-2 text-blue-400">Sitio Web - Servicios Zayra</h3>
@@ -116,6 +137,7 @@
                     </div>
                 </div>
 
+                <!-- Proyecto 3: Portafolio Zayra -->
                 <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 flex flex-col justify-between">
                     <div>
                         <h3 class="text-xl font-bold mb-2 text-blue-400">Portafolio - Construcciones Zayra</h3>
@@ -131,6 +153,7 @@
                     </div>
                 </div>
 
+                <!-- Proyecto 4: Sistema de Citas del Hospital -->
                 <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 flex flex-col justify-between">
                     <div>
                         <h3 class="text-xl font-bold mb-2 text-blue-400">Sistema de Citas Médicas</h3>
@@ -146,6 +169,7 @@
                     </div>
                 </div>
 
+                <!-- Proyecto 5: Sistema de Inventario -->
                 <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 flex flex-col justify-between">
                     <div>
                         <h3 class="text-xl font-bold mb-2 text-blue-400">Sistema de Inventario</h3>
@@ -161,6 +185,7 @@
                     </div>
                 </div>
 
+                <!-- Proyecto 6: Agenda -->
                 <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 flex flex-col justify-between">
                     <div>
                         <h3 class="text-xl font-bold mb-2 text-blue-400">Aplicación de Agenda</h3>
@@ -180,6 +205,7 @@
         </div>
     </section>
 
+    <!-- ANIMACIONES -->
     <section id="animaciones" class="border-t border-slate-800 py-20">
         <div class="max-w-6xl mx-auto px-6">
             <h2 class="text-2xl md:text-3xl font-bold mb-4">Animaciones UI & Motion Design</h2>
@@ -187,6 +213,7 @@
             
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 
+                <!-- Animación 1 -->
                 <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden flex flex-col justify-between">
                     <div class="bg-slate-950 h-48 relative border-b border-slate-800 flex items-center justify-center">
                         <iframe src="https://drive.google.com/file/d/1AMVKCTBSIeoSKlXaHQxB1KJL-MiGF76F/preview" class="w-full h-full border-0 absolute inset-0" allow="autoplay"></iframe>
@@ -200,6 +227,7 @@
                     </div>
                 </div>
 
+                <!-- Animación 2 -->
                 <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden flex flex-col justify-between">
                     <div class="bg-slate-950 h-48 relative border-b border-slate-800 flex items-center justify-center">
                         <iframe src="https://drive.google.com/file/d/1zrrCWYxGyb-idRAuwTDSav0I40Z5LZhH/preview" class="w-full h-full border-0 absolute inset-0" allow="autoplay"></iframe>
@@ -213,6 +241,7 @@
                     </div>
                 </div>
 
+                <!-- Animación 3 -->
                 <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden flex flex-col justify-between">
                     <div class="bg-slate-950 h-48 relative border-b border-slate-800 flex items-center justify-center">
                         <iframe src="https://drive.google.com/file/d/16sy9J_4hRI-KkjyEYOGWP9L8j7rFAHLf/preview" class="w-full h-full border-0 absolute inset-0" allow="autoplay"></iframe>
@@ -230,6 +259,7 @@
         </div>
     </section>
 
+    <!-- FLYERS & DISEÑO GRÁFICO -->
     <section id="flyers" class="border-t border-slate-800 bg-slate-950/50 py-20">
         <div class="max-w-6xl mx-auto px-6">
             <h2 class="text-2xl md:text-3xl font-bold mb-4">Flyers & Diseño Publicitario</h2>
@@ -237,6 +267,7 @@
             
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 
+                <!-- Flyer 1 -->
                 <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden flex flex-col justify-between">
                     <div class="bg-slate-950 h-64 relative border-b border-slate-800 flex items-center justify-center">
                         <iframe src="https://drive.google.com/file/d/1M_FCQPnYZ7epa_8fJ6MCh78Q8ER-Urjd/preview" class="w-full h-full border-0 absolute inset-0" allow="autoplay"></iframe>
@@ -250,6 +281,7 @@
                     </div>
                 </div>
 
+                <!-- Flyer 2 -->
                 <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden flex flex-col justify-between">
                     <div class="bg-slate-950 h-64 relative border-b border-slate-800 flex items-center justify-center">
                         <iframe src="https://drive.google.com/file/d/1nDJjeT2_IM9Znjj0km8TF_Pk1fmw831t/preview" class="w-full h-full border-0 absolute inset-0" allow="autoplay"></iframe>
@@ -263,6 +295,7 @@
                     </div>
                 </div>
 
+                <!-- Flyer 3 -->
                 <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden flex flex-col justify-between">
                     <div class="bg-slate-950 h-64 relative border-b border-slate-800 flex items-center justify-center">
                         <iframe src="https://drive.google.com/file/d/1mfsqwzBPpE_zok9A5GbSa2YqTmK-FfkY/preview" class="w-full h-full border-0 absolute inset-0" allow="autoplay"></iframe>
@@ -280,6 +313,7 @@
         </div>
     </section>
 
+    <!-- CONTACTO -->
     <section id="contacto" class="border-t border-slate-800 py-20">
         <div class="max-w-6xl mx-auto px-6 text-center">
             <h2 class="text-2xl md:text-3xl font-bold mb-4">¿Trabajamos juntos?</h2>
@@ -288,10 +322,12 @@
         </div>
     </section>
 
+    <!-- FOOTER -->
     <footer class="border-t border-slate-800 py-8 text-center text-slate-500 text-sm">
         <p>Diseñado y desarrollado por Tu Nombre © 2026</p>
     </footer>
 
+    <!-- SCRIPT PARA REGISTRAR EL SERVICE WORKER -->
     <script>
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', () => {

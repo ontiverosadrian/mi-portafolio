@@ -4,20 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Portafolio Profesional</title>
-    <!-- Configuración PWA -->
     <link rel="manifest" href="manifest.json">
     <meta name="theme-color" content="#2563eb">
     <link rel="apple-touch-icon" href="images/icon-192.png">
-    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-slate-900 text-slate-100 font-sans antialiased">
 
-    <!-- HEADER / NAVEGACIÓN -->
     <header class="sticky top-0 z-50 bg-slate-900/85 backdrop-blur-md border-b border-slate-800">
         <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
             <span class="font-bold text-xl text-blue-400">Portafolio</span>
-            <nav class="hidden md:flex space-x-6 text-sm">
+            <nav class="hidden md:flex space-x-6 items-center text-sm">
                 <a href="#sobre-mi" class="hover:text-blue-400 transition">Sobre mí</a>
                 <a href="#habilidades" class="hover:text-blue-400 transition">Habilidades</a>
                 <a href="#proyectos" class="hover:text-blue-400 transition">Proyectos</a>
@@ -25,22 +22,32 @@
                 <a href="#flyers" class="hover:text-blue-400 transition">Flyers</a>
                 <a href="#certificados" class="hover:text-blue-400 transition">Certificados</a>
                 <a href="#contacto" class="hover:text-blue-400 transition">Contacto</a>
+                <a href="cv-adrian.pdf" target="_blank" class="bg-blue-600 hover:bg-blue-700 text-white font-medium px-4 py-2 rounded-lg transition shadow-md shadow-blue-600/20 flex items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                    </svg>
+                    Descargar CV
+                </a>
             </nav>
         </div>
     </header>
 
-    <!-- HERO SECTION -->
     <section class="max-w-6xl mx-auto px-6 py-24 md:py-32 flex flex-col items-start justify-center">
         <span class="text-blue-400 font-medium mb-3">Hola, mi nombre es</span>
         <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-4">Adrian <span class="text-slate-400">Desarrollador Web.</span></h1>
         <p class="text-slate-400 text-lg md:text-xl max-w-2xl mb-8">Construyo aplicaciones web modernas, rápidas y accesibles. Transformo ideas en experiencias digitales excepcionales y Progressive Web Apps optimizadas.</p>
-        <div class="flex gap-4">
+        <div class="flex flex-wrap gap-4">
             <a href="#proyectos" class="bg-blue-600 hover:bg-blue-700 text-white font-medium px-6 py-3 rounded-lg transition shadow-lg shadow-blue-600/20">Ver Proyectos</a>
+            <a href="cv-adrian.pdf" target="_blank" class="border border-blue-500 text-blue-400 hover:bg-blue-500/10 font-medium px-6 py-3 rounded-lg transition flex items-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                </svg>
+                Descargar CV PDF
+            </a>
             <a href="#contacto" class="border border-slate-700 hover:border-slate-500 font-medium px-6 py-3 rounded-lg transition">Contáctame</a>
         </div>
     </section>
 
-    <!-- SOBRE MÍ -->
     <section id="sobre-mi" class="border-t border-slate-800 bg-slate-950/50 py-20">
         <div class="max-w-6xl mx-auto px-6">
             <h2 class="text-2xl md:text-3xl font-bold mb-6">Sobre Mí</h2>
@@ -48,13 +55,11 @@
         </div>
     </section>
 
-    <!-- HABILIDADES -->
     <section id="habilidades" class="border-t border-slate-800 py-20">
         <div class="max-w-6xl mx-auto px-6">
             <h2 class="text-2xl md:text-3xl font-bold mb-10">Habilidades Técnicas</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 
-                <!-- Columna 1: Programación & Desarrollo -->
                 <div class="bg-slate-900 border border-slate-800 p-6 rounded-2xl">
                     <h3 class="text-lg font-bold mb-4 text-blue-400">Desarrollo & Programación</h3>
                     <ul class="space-y-2 text-slate-400">
@@ -69,7 +74,6 @@
                     </ul>
                 </div>
 
-                <!-- Columna 2: Diseño, Multimedia & Motor de Juegos -->
                 <div class="bg-slate-900 border border-slate-800 p-6 rounded-2xl">
                     <h3 class="text-lg font-bold mb-4 text-blue-400">Diseño & Multimedia</h3>
                     <ul class="space-y-2 text-slate-400">
@@ -83,7 +87,6 @@
                     </ul>
                 </div>
 
-                <!-- Columna 3: Herramientas, Ofimática & Sistemas -->
                 <div class="bg-slate-900 border border-slate-800 p-6 rounded-2xl">
                     <h3 class="text-lg font-bold mb-4 text-blue-400">Ofimática & Sistemas</h3>
                     <ul class="space-y-2 text-slate-400">
@@ -100,13 +103,11 @@
         </div>
     </section>
 
-    <!-- PROYECTOS -->
     <section id="proyectos" class="border-t border-slate-800 bg-slate-950/50 py-20">
         <div class="max-w-6xl mx-auto px-6">
             <h2 class="text-2xl md:text-3xl font-bold mb-10">Proyectos Destacados</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 
-                <!-- Proyecto 1: Sistema de Pedidos -->
                 <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 flex flex-col justify-between">
                     <div>
                         <h3 class="text-xl font-bold mb-2 text-blue-400">Sistema de Pedidos</h3>
@@ -122,7 +123,6 @@
                     </div>
                 </div>
 
-                <!-- Proyecto 2: Sitio Web Zayra -->
                 <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 flex flex-col justify-between">
                     <div>
                         <h3 class="text-xl font-bold mb-2 text-blue-400">Sitio Web - Servicios Zayra</h3>
@@ -138,7 +138,6 @@
                     </div>
                 </div>
 
-                <!-- Proyecto 3: Portafolio Zayra -->
                 <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 flex flex-col justify-between">
                     <div>
                         <h3 class="text-xl font-bold mb-2 text-blue-400">Portafolio - Construcciones Zayra</h3>
@@ -154,7 +153,6 @@
                     </div>
                 </div>
 
-                <!-- Proyecto 4: Sistema de Citas del Hospital -->
                 <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 flex flex-col justify-between">
                     <div>
                         <h3 class="text-xl font-bold mb-2 text-blue-400">Sistema de Citas Médicas</h3>
@@ -170,7 +168,6 @@
                     </div>
                 </div>
 
-                <!-- Proyecto 5: Sistema de Inventario -->
                 <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 flex flex-col justify-between">
                     <div>
                         <h3 class="text-xl font-bold mb-2 text-blue-400">Sistema de Inventario</h3>
@@ -186,7 +183,6 @@
                     </div>
                 </div>
 
-                <!-- Proyecto 6: Agenda -->
                 <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 flex flex-col justify-between">
                     <div>
                         <h3 class="text-xl font-bold mb-2 text-blue-400">Aplicación de Agenda</h3>
@@ -206,7 +202,6 @@
         </div>
     </section>
 
-    <!-- ANIMACIONES (6 Animaciones en total) -->
     <section id="animaciones" class="border-t border-slate-800 py-20">
         <div class="max-w-6xl mx-auto px-6">
             <h2 class="text-2xl md:text-3xl font-bold mb-4">Animaciones UI & Motion Design</h2>
@@ -214,7 +209,6 @@
             
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 
-                <!-- Animación 1 (Original) -->
                 <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden flex flex-col justify-between">
                     <div class="bg-slate-950 h-48 relative border-b border-slate-800 flex items-center justify-center">
                         <iframe src="https://drive.google.com/file/d/1AMVKCTBSIeoSKlXaHQxB1KJL-MiGF76F/preview" class="w-full h-full border-0 absolute inset-0" allow="autoplay"></iframe>
@@ -228,7 +222,6 @@
                     </div>
                 </div>
 
-                <!-- Animación 2 (Original) -->
                 <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden flex flex-col justify-between">
                     <div class="bg-slate-950 h-48 relative border-b border-slate-800 flex items-center justify-center">
                         <iframe src="https://drive.google.com/file/d/1zrrCWYxGyb-idRAuwTDSav0I40Z5LZhH/preview" class="w-full h-full border-0 absolute inset-0" allow="autoplay"></iframe>
@@ -242,7 +235,6 @@
                     </div>
                 </div>
 
-                <!-- Animación 3 (Original) -->
                 <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden flex flex-col justify-between">
                     <div class="bg-slate-950 h-48 relative border-b border-slate-800 flex items-center justify-center">
                         <iframe src="https://drive.google.com/file/d/16sy9J_4hRI-KkjyEYOGWP9L8j7rFAHLf/preview" class="w-full h-full border-0 absolute inset-0" allow="autoplay"></iframe>
@@ -256,7 +248,6 @@
                     </div>
                 </div>
 
-                <!-- Animación 4 (Nuevo enlace 1) -->
                 <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden flex flex-col justify-between">
                     <div class="bg-slate-950 h-48 relative border-b border-slate-800 flex items-center justify-center">
                         <iframe src="https://drive.google.com/file/d/1JNud5JF4Yv_wiqcnlgY3WUrGmSx0tJGV/preview" class="w-full h-full border-0 absolute inset-0" allow="autoplay"></iframe>
@@ -270,7 +261,6 @@
                     </div>
                 </div>
 
-                <!-- Animación 5 (Nuevo enlace 2) -->
                 <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden flex flex-col justify-between">
                     <div class="bg-slate-950 h-48 relative border-b border-slate-800 flex items-center justify-center">
                         <iframe src="https://drive.google.com/file/d/1_oYzKZfqcyfT9fHbfHmJEgfpjO9w4kJr/preview" class="w-full h-full border-0 absolute inset-0" allow="autoplay"></iframe>
@@ -284,7 +274,6 @@
                     </div>
                 </div>
 
-                <!-- Animación 6 (Nuevo enlace 3) -->
                 <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden flex flex-col justify-between">
                     <div class="bg-slate-950 h-48 relative border-b border-slate-800 flex items-center justify-center">
                         <iframe src="https://drive.google.com/file/d/1AYmTr7fEGnZ-2Mu31mEvI5Wo2ssg_XvO/preview" class="w-full h-full border-0 absolute inset-0" allow="autoplay"></iframe>
@@ -302,7 +291,6 @@
         </div>
     </section>
 
-    <!-- FLYERS & DISEÑO GRÁFICO -->
     <section id="flyers" class="border-t border-slate-800 bg-slate-950/50 py-20">
         <div class="max-w-6xl mx-auto px-6">
             <h2 class="text-2xl md:text-3xl font-bold mb-4">Flyers & Diseño Publicitario</h2>
@@ -310,7 +298,6 @@
             
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 
-                <!-- Flyer 1 -->
                 <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden flex flex-col justify-between">
                     <div class="bg-slate-950 h-64 relative border-b border-slate-800 flex items-center justify-center">
                         <iframe src="https://drive.google.com/file/d/1M_FCQPnYZ7epa_8fJ6MCh78Q8ER-Urjd/preview" class="w-full h-full border-0 absolute inset-0" allow="autoplay"></iframe>
@@ -324,7 +311,6 @@
                     </div>
                 </div>
 
-                <!-- Flyer 2 -->
                 <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden flex flex-col justify-between">
                     <div class="bg-slate-950 h-64 relative border-b border-slate-800 flex items-center justify-center">
                         <iframe src="https://drive.google.com/file/d/1nDJjeT2_IM9Znjj0km8TF_Pk1fmw831t/preview" class="w-full h-full border-0 absolute inset-0" allow="autoplay"></iframe>
@@ -338,7 +324,6 @@
                     </div>
                 </div>
 
-                <!-- Flyer 3 -->
                 <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden flex flex-col justify-between">
                     <div class="bg-slate-950 h-64 relative border-b border-slate-800 flex items-center justify-center">
                         <iframe src="https://drive.google.com/file/d/1mfsqwzBPpE_zok9A5GbSa2YqTmK-FfkY/preview" class="w-full h-full border-0 absolute inset-0" allow="autoplay"></iframe>
@@ -352,7 +337,6 @@
                     </div>
                 </div>
 
-                <!-- Flyer 4 -->
                 <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden flex flex-col justify-between">
                     <div class="bg-slate-950 h-64 relative border-b border-slate-800 flex items-center justify-center">
                         <iframe src="https://drive.google.com/file/d/1X9cNJIfaTkLj7TlynheyoDroEPEglMLH/preview" class="w-full h-full border-0 absolute inset-0" allow="autoplay"></iframe>
@@ -366,7 +350,6 @@
                     </div>
                 </div>
 
-                <!-- Flyer 5 -->
                 <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden flex flex-col justify-between">
                     <div class="bg-slate-950 h-64 relative border-b border-slate-800 flex items-center justify-center">
                         <iframe src="https://drive.google.com/file/d/13Zi2A5NBI4gdoJwDs3Q97hvjusB4BuBA/preview" class="w-full h-full border-0 absolute inset-0" allow="autoplay"></iframe>
@@ -380,7 +363,6 @@
                     </div>
                 </div>
 
-                <!-- Flyer 6 -->
                 <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden flex flex-col justify-between">
                     <div class="bg-slate-950 h-64 relative border-b border-slate-800 flex items-center justify-center">
                         <iframe src="https://drive.google.com/file/d/AQUI_PEGA_EL_ID_DEL_FLYER_6/preview" class="w-full h-full border-0 absolute inset-0" allow="autoplay"></iframe>
@@ -398,7 +380,6 @@
         </div>
     </section>
 
-    <!-- CERTIFICADOS -->
     <section id="certificados" class="border-t border-slate-800 py-20">
         <div class="max-w-6xl mx-auto px-6">
             <h2 class="text-2xl md:text-3xl font-bold mb-4">Certificados & Credenciales</h2>
@@ -406,7 +387,6 @@
             
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 
-                <!-- Certificado 1 -->
                 <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden flex flex-col justify-between">
                     <div class="bg-slate-950 h-64 relative border-b border-slate-800 flex items-center justify-center">
                         <iframe src="https://drive.google.com/file/d/1kiAWbp1C8Mw-0woH8rgW70BDccP0ujli/preview" class="w-full h-full border-0 absolute inset-0" allow="autoplay"></iframe>
@@ -421,7 +401,6 @@
                     </div>
                 </div>
 
-                <!-- Certificado 2 -->
                 <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden flex flex-col justify-between">
                     <div class="bg-slate-950 h-64 relative border-b border-slate-800 flex items-center justify-center">
                         <iframe src="https://drive.google.com/file/d/10H_tnHUJFz7urPgv141yri4ov0fTZAi4/preview" class="w-full h-full border-0 absolute inset-0" allow="autoplay"></iframe>
@@ -436,7 +415,6 @@
                     </div>
                 </div>
 
-                <!-- Certificado 3 -->
                 <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 flex flex-col justify-between">
                     <div>
                         <h3 class="text-xl font-bold mb-2 text-blue-400">Certificado 3</h3>
@@ -455,7 +433,6 @@
         </div>
     </section>
 
-    <!-- CONTACTO -->
     <section id="contacto" class="border-t border-slate-800 py-20">
         <div class="max-w-6xl mx-auto px-6 text-center">
             <h2 class="text-2xl md:text-3xl font-bold mb-4">¿Trabajamos juntos?</h2>
@@ -464,12 +441,10 @@
         </div>
     </section>
 
-    <!-- FOOTER -->
     <footer class="border-t border-slate-800 py-8 text-center text-slate-500 text-sm">
         <p>Diseñado y desarrollado por Adrian Ontiveros © 2026</p>
     </footer>
 
-    <!-- SCRIPT PARA REGISTRAR EL SERVICE WORKER -->
     <script>
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', () => {
